@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Assignment #2</h1>
+    </header>
+    <div class="question">
+        <h2>Question No. 1: Hello, World!:</h2>
+        <button class="hello_btn" onclick="hello()">Click me..</button>
+    </div>
+<div class="question">
+        <h2>Question No. 2: Calculator:</h2>
+        <div style="border: 1px solid black; width: max-content; padding: 10px; border-radius: 10px; margin-left: 40%;">
+            <div id="display" style="border: 1px solid black; height: 22px; border-radius: 5px; margin-bottom: 10px; padding: 5px; text-align: right;">
+            </div>
+            <table border="1px" width="100px">
+                <tr>
+                    <td> <button class="cal-btn">C</button></td>
+                    <td> <button class="cal-btn">-</button></td>
+                    <td> <button class="cal-btn">+</button></td>
+                    <td> <button class="cal-btn">*</button></td>
+                </tr>
+
+                <tr>
+                    <td> <button class="cal-btn">1</button></td>
+                    <td> <button class="cal-btn">2</button></td>
+                    <td> <button class="cal-btn">3</button></td>
+                    <td> <button class="cal-btn">/</button></td>
+                </tr>
+                <tr>
+                    <td> <button class="cal-btn">4</button></td>
+                    <td> <button class="cal-btn">5</button></td>
+                    <td> <button class="cal-btn">6</button> </td>
+                    <td rowspan="3"> <button id="equals" style="height: 80px;">=</button></td>
+                </tr>
+                <tr>
+                    <td> <button class="cal-btn">7</button></td>
+                    <td> <button class="cal-btn">8</button></td>
+                    <td> <button class="cal-btn">9</button></td>
+                </tr>
+                <tr>
+                    <td colspan="3"> <button class="cal-btn">0</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+    <div class="question">
+        <h2>Question No. 3: To-Do List</h2>
+        <div style="text-align: center;">
+        <input type="text" id="todoInput" placeholder="Enter a new task" />
+        <button class="btn"  onclick="addToDo()">Add Task</button>
+    </div>
+        <ul id="todoList">
+            <li>nan</li>
+        </ul>
+    </div>
+    <div class="question">
+        <h2>Question No. 4: Random Number Generator:</h2>
+        <div id="numberDisplay" style="border: 1px solid black; height: 22px; border-radius: 5px; margin-bottom: 10px; padding: 5px;"></div>
+        <button class="hello_btn" onclick="genrateNumber()">Click me..</button>
+
+    </div>
+    <div class="question">
+        <h2>Temperature Converter:</h2>
+        <div style="display: flex; justify-content: center; align-items: center;">
+            <input type="number" id="celsius" placeholder="Celsius">
+            <input type="number" id="fahrenheit" placeholder="Fahrenheit">
+            <button class="btn" onclick="convertTemperature()">Convert</button>
+        </div>
+        <div style="display: flex; justify-content: center;">
+            Result:<div id="result"></div>
+        </div>
+
+    </div>
+    <div class="question">
+        <h2>Question No. 6: Palindrome Checker:</h2>
+        <div style="display: flex; justify-content: center;">
+        <input type="text" id="inputText" placeholder="Enter a word or phrase" />
+        <button class="btn" onclick="checkPalindrome()">Check</button>
+        </div>
+        <div style="text-align: center;" id="ans"></div>
+    </div>
+    <div class="question">
+        <h2>Question No. 7: Timer:</h2>
+        <div style="text-align: center;" id="timer">00:00</div>
+        <div style="display: flex; justify-content: center;">
+        <button class="btn" id="startButton" onclick="startTimer()">Start</button>
+        <button class="btn" id="stopButton" onclick="stopTimer()" disabled>Stop</button>
+    </div>
+    </div>
+    <div class="question">
+        <h2>Question No. 8: Dropdown Menu:</h2>
+        <div style="text-align: center;">
+        <select id="dropdownMenu">
+            <option value="">Select city</option>
+            <option value="Lahore">Lahore</option>
+            <option value="Karachi">Karachi</option>
+            <option value="Islamabad">Islamabad</option>
+            <option value="Vehari">Vehari</option>
+        </select>
+        <button class="btn" onclick="displaySelectedOption()">Show Selected Option</button>
+        <p id="displayArea"></p>
+    </div>
+    </div>
+
+    <script src="java.js"></script>
+</body>
+</html>
