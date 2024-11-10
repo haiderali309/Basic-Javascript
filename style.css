@@ -1,0 +1,57 @@
+.question{
+    border: 1px solid black;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 15px;
+}
+body{
+    background-color: rgb(166, 227, 235);
+}
+h1{
+    text-align: center;
+    font-size: larger;
+    font-weight: bolder;
+}
+h2{
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+}
+.hello_btn{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 45%;
+    background-color: rgb(25, 213, 185);
+}
+.hello_btn:hover{
+    background-color: rgb(72, 25, 213);
+}
+.cal-btn{
+    width: 100%;
+}
+.cal-btn:hover{
+    background-color: rgb(235, 112, 3);
+}
+td,th {
+    border: none;
+    padding: 5px;
+    text-align: center;
+}
+#display {
+    font-size: 18px;
+    text-align: right;
+    padding: 5px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+}
+.btn{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: rgb(25, 213, 185);
+
+}
+.btn:hover{
+    background-color: rgb(72, 25, 213);
+}
